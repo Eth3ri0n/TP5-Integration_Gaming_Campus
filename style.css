@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+button {
+  background: none;
+  outline: none;
+  border: 1px solid whitesmoke;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: 0.4s ease;
+  -webkit-transition: 0.4s ease;
+  -moz-transition: 0.4s ease;
+  -ms-transition: 0.4s ease;
+  -o-transition: 0.4s ease;
+  cursor: pointer;
+}
+button:hover {
+  color: black;
+  background-color: whitesmoke;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*******************************-Nav-********************************/
+nav {
+  min-width: 1100px;
+  margin: 0 auto;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 5px;
+
+}
+nav li {
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  position: relative;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  padding: 20px 0;
+}
+nav li:first-child {
+  color: blueviolet;
+}
+nav li:first-child::before {
+  content: "";
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  background-color: blueviolet;
+  transform: translateY(-20px);
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  -o-transform: translateY(-20px);
+}
+nav li:hover::before {
+  content: "";
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  background-color: blueviolet;
+  transform: translateY(-20px);
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  -o-transform: translateY(-20px);
+}
+nav li:last-child::before{
+  background: none;
+}
+
+#language {
+  background-color: rgb(223, 223, 223);
+  padding: 5px 15px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+/******************************-Header-******************************/
+
+.main-header {
+  background: url(./assets/img/bg.jpg) fixed center/cover;
+  color: white;
+  padding: 60px;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  margin: 30px 0 35px;
+}
+
+.main-header button {
+  padding: 20px 30px;
+  letter-spacing: 2px;
+}
+.main-header i {
+  transform: translateX(5px);
+  -webkit-transform: translateX(5px);
+  -moz-transform: translateX(5px);
+  -ms-transform: translateX(5px);
+  -o-transform: translateX(5px);
+}
+
+/**************************-Header Text-*****************************/
+
+.header-text {
+  font-weight: bolder;
+  padding: 40px 0;
+  max-width: 1100px;
+  font-size: 1.2rem;
+  line-height: 34px;
+  margin: 0 auto;
+}
+
+/*****************************-Icon part-****************************/
+.icon-part {
+  background-color: black;
+  color: aliceblue;
+  padding: 65px 0;
+}
+.icon-part h3 {
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+.icon-part p {
+  width: 80%;
+  margin: 10px auto 20px;
+}
+.icon-part button {
+  padding: 9px 32px;
+}
+.icon-part-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.lip-logo {
+  margin-bottom: 30px;
+}
+.list-icon-part {
+  text-align: center;
+  padding: 25px;
+}
+.list-icon-part button {
+  background: none;
+  border: 1px solid white;
+  text-transform: uppercase;
+  color: white;
+  padding: 10px;
+  font-weight: bolder;
+}
+
+/****************************-News Campus-***************************/
+.news-part {
+  background-color: whitesmoke;
+  padding: 80px 0 45px;
+}
+.header-news {
+  display: grid;
+   grid-template-columns: 70% 30%;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.left-part {
+  font-weight: bolder;
+  line-height: 30px;
+}
+.left-part h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bolder;
+  text-align: left;
+}
+.left-part p {
+  font-weight: bolder;
+  font-size: 0.9rem;
+  text-align: left;
+}
+.right-part button {
+  color: black;
+  border-color: black;
+  padding: 10px 20px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.right-part button:hover {
+  color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/***************************-Main News-******************************/
+
+.main-news-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1100px;
+  margin: 45px auto;
+}
+
+.main-news-container > div {
+  position: relative;
+  max-width: 23%;
+}
+.mn-pic img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  box-shadow: 0 2px 10px #888888;
+}
+.main-news-container h4 {
+  margin: 15px 0;
+  text-align: left;
+}
+.main-news-container p {
+  text-align: left;
+  font-size: 0.8rem;
+  font-weight: bolder;
+  line-height: 20px;
+  margin-bottom: 45px;
+}
+.main-news-container .link {
+  position: absolute;
+  bottom: 0;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+/***************************-Contact-******************************/
+.contact {
+  padding: 65px 0 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.contact-list {
+  display: flex;
+  justify-content: space-around;
+  font-weight: bolder;
+}
+.contact-list .list {
+  width: calc(100% / 4);
+  text-align: left;
+  padding: 20px;
+}
+.contact-list .list .infos-p li {
+  padding: 5px;
+}
+.contact-list .list >h5 {
+  font-size: larger;
+  margin-bottom: 20px;
+}
+/**************************-Contact-media*************************/
+.contact-medias {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  border-top: 1px solid gray;
+  max-width: 1100px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+}
+/*****************************-Footer-****************************/
+footer {
+  background-color: black;
+  color: aliceblue;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px;
+}
+footer h3 {
+  padding: 20px;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+}
+footer ul li {
+  margin-right: 10px;
+  list-style: none;
+}
